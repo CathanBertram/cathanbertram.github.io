@@ -306,6 +306,65 @@ margin: auto;
 			padding: 0.5em;
 			width: 2.25em;
 		}
+		@media screen and (max-width: 1680px) {
+
+			#banner {
+				padding: 11em 0 9em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				padding: 9em 0 7em 0;
+			}
+
+				#banner h2 {
+					font-size: 2em;
+				}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				padding: 8em 2em 6em 2em;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 5em 2em 3em 2em;
+			}
+
+				#banner h2 {
+					font-size: 1.5em;
+				}
+
+				#banner p {
+					font-size: 1em;
+				}
+
+				#banner .icon {
+					font-size: 2em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 5em 2em 3em 2em;
+			}
+
+				#banner .icon {
+					font-size: 1.5em;
+				}
+
+		}
 
 /* Basic */
 
