@@ -1,139 +1,124 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Retrospect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
 	<head>
-		<title>Cathan Bertram</title>
+		<title>Shape Tower Defence</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script>	var slideIndex = 1;
-			showSlide(slideIndex);
-
-			//Next/Previous Controls
-			function plusSlides(n){
-				showSlide(slideIndex += n);
-			}
-			//thumbnail image control
-			function currentSlide(n){
-				showSlide(slideIndex = n)
-			}
-			function showSlide(n){
-				var i;
-				var slides =document.getElementsByClassName("mySlides");
-				if (n > slides.length) {
-					slideIndex = 1
-				}
-				if (n < 1) {
-					slideIndex=slides.length
-				}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display="none";
-				}
-				slides[slideIndex-1].style.display = "block";
-			}</script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body class="is-preload">
+	<body class="landing">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a href="ShapeTowerDefence.html">ShapeTD</a></h1>
+			</header>
 
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Shape Tower Defence</h2>
+				<p>By Cathan Bertram</p>
+			</section>
+		<!-- One -->
+			<section id="one" class="wrapper style1">
+				<div class="inner">
+					<article class="feature content">
+						<div class="content">
+							<h2>Shape Tower Defence</h2>
+							<p>Shape Tower Defence is a simple, endless tower defence game. Try to survive as long as you can while being attacked by a variety of enemies.
+								When you lose, you can restart and try to beat your highest round!</p>
+						</div>
+					</article>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Cathan<br />
-						Bertram</h1>
-						<p>Welcome To My Portfolio</p>
-						<ul class="icons">
-							<li><a href="https://twitter.com/bertramcathan" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/cathanbertram" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/cathanbertram/" class="icon brands fab fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+					<article class="feature left">
+						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+						<div class="content">
+							<h2>Towers</h2>
+							<p>Shape Tower Defence features a wide variety of towers that will suite any playstyle!</p>
+						</div>
+					</article>
+					<article class="feature right">
+						<span class="image"><img src="images/pic02.jpg" alt="" /></span>
+						<div class="content">
+							<h2>Enemies</h2>
+							<p>Shape Tower Defence has a range of enemies that will be a challenge for even the strongest of players.</p>
+						</div>
+					</article>
+					<article class="feature left">
+						<span class="image"><img src="images/pic03.jpg" alt="" /></span>
+						<div class="content">
+							<h2>Endless Waves</h2>
+							<p>Shape Tower Defence has an unlimited number of waves that get progressively harder. How far will you get?</p>
+						</div>
+					</article>
+				</div>
+			</section>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="about.html" class="logo">Cathan Bertram</a>
+		<!-- Four -->
+			<section id="four" class="wrapper style2 special">
+				<div class="inner">
+					<header class="major narrow">
+						<h2>Get in touch</h2>
+						<p>Any suggestions/bug reports for out game? Send them here!</p>
 					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="About.html">About</a></li>
-							<li><a href="modulizer.html">Modulizer</a></li>
-							<li><a href="Game2.html">Game 2</a></li>
-							<li><a href="Game3.html">Game 3</a></li>
-							<li><a href="CurrentProject.html">Current Project</a></li>
-							<li><a href="temp/ShapeTowerDefence.html">ShapeTD</a></li>
+					<form action="#" method="POST">
+						<div class="container 75%">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input name="name" placeholder="Name" type="text" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input name="email" placeholder="Email" type="email" />
+								</div>
+								<div class="12u$">
+									<textarea name="message" placeholder="Message" rows="4"></textarea>
+								</div>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" class="alt" value="Submit" /></li>
+							<li><input type="reset" class="alt" value="Reset" /></li>
 						</ul>
-					</nav>
+					</form>
+				</div>
+			</section>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Main Content -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">About<br /></a></h2>
-									<p>I'm cathan, I'm currently studying Computer Games Development at staffordshire university</p>
-								</header>
-
-						<!--slideshow code-->
-								<div class="slideshow-container">
-									<!--add this to include more slideshow images-->
-									<div class="mySlides">
-										<div class="imageNumber">1/2</div>
-
-										<img src="images/me.jpg"alt="Hello, this is a picture of me"style="width: 50%; height: 50%;">
-
-										<div class="caption">Hello, this is a picture of me</div>
-									</div>
-									<div class="mySlides">
-										<div class="imageNumber">2/2</div>
-
-										<img src="images/ModulizerLogo.png"alt="This is the logo for the game modulizer"style="width: 50%; height: 50%;">
-
-										<div class="caption">This is the logo for the game modulizer made during ludum dare 45</div>
-									</div>
-										<!--slideshow buttons-->
-										<a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-										<a class="next" onclick="plusSlides(1)">&#10095;</a>
-								</div><!--close slideshow code-->
-							</article>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-							<section>
-								<h3>Social Media</h3>
-								<ul class="icons">
-									<li><a href="https://twitter.com/bertramcathan" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-									<li><a href="https://github.com/cathanbertram" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/cathanbertram/" class="icon brands fab fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-								</ul>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Cathan Bertram</a></li></ul>
-					</div>
-
-			</div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="http://www.twitter.com" target = "_blank" class="icon fa-twitter">
+							<span class="label">Twitter</span>
+						</a></li>
+						<li><a href="http://www.facebook.com" target = "_blank" class="icon fa-facebook">
+							<span class="label">Facebook</span>
+						</a></li>
+						<li><a href="http://www.youtube.com" target = "_blank" class="icon fa-youtube">
+							<span class="label">Youtube</span>
+						</a></li>
+						<li><a href="http://www.instagram.com" target = "_blank"class="icon fa-instagram">
+							<span class="label">Instagram</span>
+						</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
+					</ul>
+				</div>
+			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
 	</body>
