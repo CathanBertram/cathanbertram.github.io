@@ -153,8 +153,6 @@
 		.container.\35 0\25 {
 			width: 45%;
 		}
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 		.container.\32 5\25 {
 			width: 22.5%;
@@ -226,10 +224,6 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-=======
->>>>>>> parent of 37ceaf1... small
-=======
->>>>>>> parent of 37ceaf1... small
 
 	.row > * {
 		float: left;
@@ -2748,8 +2742,8 @@
 			}
 
 		.feature .content {
-			text-align: center;
 			margin: auto;
+			text-align: center;
 			padding: 2em 3em 0.1em 3em;
 			width: 52%;
 		}
@@ -3101,7 +3095,7 @@
 					}
 
 		.wrapper.style2 {
-			background-color: #673831;
+			background-color: #1E2832;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
@@ -3288,7 +3282,7 @@
 				.wrapper.style2 input[type="button"].special,
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
-					background-color: #30E6DC;
+					background-color: #51BAA4;
 					box-shadow: none;
 					color: #fff !important;
 				}
@@ -3887,7 +3881,7 @@
 		background-color: #1E2832;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
-		background-image: url("images/Banner.png"), url("../../images/Banner.jpg");
+		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-size: cover;
 		text-align: center;
 	}
@@ -4126,7 +4120,7 @@
 /* Footer */
 
 	#footer {
-		background-color: #673831;
+		background-color: #1E2832;
 		color: rgba(255, 255, 255, 0.75);
 		text-align: center;
 	}
