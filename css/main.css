@@ -3,7 +3,7 @@
 /*  ==========================================================================
     Table of Contets
     ==========================================================================
-    
+
     1.0 Common Styles
     2.0 Header Section
     3.0 Hero Section
@@ -16,13 +16,13 @@
     10.0 Blog Section
     11.0 Footer Section
     12.0 Scroll To Top
-    
+
     ==========================================================================
     AlexaTheme
     ========================================================================== */
 
     @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700');
-    
+
 /*  ==========================================================================
     1.0 Common Styles
     ========================================================================== */
@@ -31,7 +31,7 @@
     margin: 0;
 }
 body{
-    background-color: #fff;
+    background-color: #121212;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -44,7 +44,7 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair Display', sans-serif;
     -webkit-font-smoothing:antialiased;
-    color: #222;
+    color: #424242;
 }
 h1{
     font-size: 40px;
@@ -106,17 +106,17 @@ textarea::-webkit-input-placeholder{
 
 input:-moz-placeholder,
 textarea:-moz-placeholder{ /* Firefox 18- */
-   color: #888 !important;  
+   color: #888 !important;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder{  /* Firefox 19+ */
-   color: #888 !important;  
+   color: #888 !important;
 }
 
 input:-ms-input-placeholder,
-textarea:-ms-input-placeholder{  
-   color: #888 !important;  
+textarea:-ms-input-placeholder{
+   color: #888 !important;
 }
 button{
     border: none;
@@ -158,7 +158,7 @@ button{
     color: #282828;
 }
 .text-white{
-    color: #ffffff;
+    color: #121212fff;
 }
 .align-left{
     text-align: left;
@@ -218,12 +218,12 @@ button{
     z-index: 999;
     height: 100%;
     width: 100%;
-    background: #111;
+    background: #0c0c0c;
     top: 0;left: 0
 }
 
 .site-preloader-wrap .spinner {
-    background-color: #fff;
+    background-color: #121212;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -235,7 +235,7 @@ button{
   width: 40px;
   height: 40px;
 
-  border-radius: 100%;  
+  border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
 }
@@ -249,7 +249,7 @@ button{
 }
 
 @keyframes sk-scaleout {
-  0% { 
+  0% {
     -webkit-transform: scale(0);
     transform: scale(0);
   } 100% {
@@ -280,7 +280,7 @@ button{
 }
 .default-btn:hover{
     background-color: #333;
-    color: #fff;
+    color: #121212;
 }
 .default-btn.btn_sm{
     line-height: 40px;
@@ -292,6 +292,28 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+a.top-left-text:visited
+{
+  color:inherit;
+}
+a.top-left-text:hover
+{
+  color:inherit;
+}
+a.top-left-text:active
+{
+  color:inherit;
+}
+.top-left-text
+{
+  /*padding: 6px 8px;*/
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  border-radius: 6px;
 }
 
 /* ==========================================================================
@@ -318,7 +340,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 /*Main Header */
 .main-header{
-    background-color: #fff;
+    background-color: #0c0c0c;
     position: relative;
 }
 .bottom-content-wrap{
@@ -336,7 +358,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     text-align: left;
 }
 #mainmenu li a{
-    color: #222;
+    color: #e5e5e5;
     font-weight: 700;
     padding: 30px 0;
     text-transform: uppercase;
@@ -344,11 +366,11 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     font-size: 12px;
 }
 #mainmenu li a:hover{
-    color: #111;
+    color: #52515c;
 }
 /*Dropdown */
 #mainmenu li ul{
-    background-color: #fff;
+    background-color: #121212;
     width: 200px;
     height: auto;
     position: absolute;
@@ -387,10 +409,10 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     transition: color 0.3s ease 0s, padding 0.3s ease 0s;
 }
 #mainmenu li > ul > li:hover a{
-    color: #111;
+    color: #0c0c0c;
 }
 #mainmenu li > ul ul{
-    background-color: #fff;
+    background-color: #121212;
     left: 200px;
 }
 #mainmenu li > ul li:hover > ul li a{
@@ -403,7 +425,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 #mainmenu li > ul li:hover > ul li > a:hover{
     background-color: transparent;
-    color: #fff;
+    color: #121212;
 }
 #mainmenu li ul li li a:hover{
     color: #ffca3f !important;
@@ -418,12 +440,12 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 .social-icon li a{
     display: inline-block;
-    color: #111;
+    color: #0c0c0c;
     font-size: 12px;
     margin: 8px;
 }
 .main-header .social-icon li a{
-	color: #111;
+	color: #e5e5e5;
 }
 .social-icon li a:hover{
     transform: rotate(1080deg);
@@ -436,7 +458,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     z-index: 999;
 }
 .slicknav_nav {
-    background-color: #fff;
+    background-color: #121212;
 }
 .js .slicknav_menu {
     width: 100%;
@@ -449,7 +471,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     margin: 13px 5px 14px;
 }
 .slicknav_nav .slicknav_row:hover,
-.slicknav_nav .slicknav_row, 
+.slicknav_nav .slicknav_row,
 .slicknav_nav a,
 .slicknav_nav a:hover{
     -moz-border-radius: 0;
@@ -457,7 +479,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     -o-border-radius: 0;
     border-radius: 0;
 }
-.slicknav_nav .slicknav_row, 
+.slicknav_nav .slicknav_row,
 .slicknav_nav a {
     padding: 10px 15px;
     margin: 0;
@@ -483,7 +505,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
    3.0 Hero Section
    ========================================================================== */
 .hero-section{
-    background-color: #fff;
+    background-color: #121212;
     position: relative;
     width: 100%;
     height: 450px;
@@ -495,7 +517,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 .hero-content{}
 .hero-content h1{
-    color: #111;
+    color: #e5e5e5;
     margin: 0;
 }
 
@@ -587,7 +609,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     z-index: -1;
     left: 0;
     bottom: -3px;
-    background: #111;
+    background: #0c0c0c;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -723,7 +745,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 }
 .skill-items .skill-item .progress .progress-bar{
     line-height: 5px;
-    background-color: #111;
+    background-color: #0c0c0c;
     position: relative;
 }
 .skill-items .skill-item .progress .progress-bar span{
@@ -920,7 +942,7 @@ span.date{
 .share-icon li a{
     display: inline-block;
     font-size: 13px;
-    color: #fff;
+    color: #121212;
     padding: 5px 10px;
     border-radius: 3px;
     font-weight: 600;
@@ -943,7 +965,7 @@ span.date{
 	margin-top: 30px;
 	position: relative;
     margin-bottom: 50px;
-    
+
 }
 
 /*Lines Details*/
@@ -1005,7 +1027,7 @@ span.date{
 	position: relative;
 	z-index: 99;
 	float: left;
-	border: 3px solid #FFF;
+	border: 3px solid #121212;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -1100,7 +1122,7 @@ span.date{
 	top: 1px;
 }
 .comment-box .comment-content {
-	background: #FFF;
+	background: #121212;
 	padding: 12px;
 	font-size: 15px;
 	color: #595959;
@@ -1112,7 +1134,7 @@ span.date{
 .comment-box .comment-name.by-author:after {
 	content: 'autor';
 	background: #03658c;
-	color: #FFF;
+	color: #121212;
 	font-size: 12px;
 	padding: 3px 5px;
 	font-weight: 700;
@@ -1144,7 +1166,7 @@ span.date{
     display: block;
 }
 
-/* Pagination 
+/* Pagination
 =============== */
 .pagination_wrap{}
 .pagination_wrap li{
@@ -1167,19 +1189,19 @@ span.date{
     box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.20);
 }
 .pagination_wrap li a.active{
-    background-color: #111;
-    border: 1px solid #111;
-    color: #fff;
+    background-color: #0c0c0c;
+    border: 1px solid #0c0c0c;
+    color: #121212;
 }
 
 /* ==========================================================================
    11.0 Footer Section
    ========================================================================== */
 .footer-section{
-    background-color: #111;
+    background-color: #0c0c0c;
 }
 .footer-content h2{
-    color: #fff;
+    color: #777777;
 }
 .social-icon li a{
     color: #ddd;
@@ -1195,7 +1217,7 @@ span.date{
 
 /*Copyright Text*/
 .copyright-text{
-    background-color: #111;
+    background-color: #0c0c0c;
     padding: 25px 0;
     border-top: 1px solid #222;
 }
@@ -1206,7 +1228,7 @@ span.date{
    12.0 Scroll To Top
    ========================================================================== */
 #scroll-to-top{
-    background-color: #111;
+    background-color: #0c0c0c;
     display: none;
     width: 45px;
     height: 45px;
@@ -1214,7 +1236,7 @@ span.date{
     font-size: 14px;
     line-height: 45px;
     border-radius: 50%;
-    color: #fff;
+    color: #121212;
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -1222,5 +1244,5 @@ span.date{
 }
 #scroll-to-top:hover{
     background-color: #222;
-    color: #fff;
+    color: #121212;
 }
