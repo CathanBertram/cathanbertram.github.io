@@ -294,6 +294,10 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     transition: all 0.5s;
 }
 
+a.top-left-text:link
+{
+  color:inherit;
+}
 a.top-left-text:visited
 {
   color:inherit;
