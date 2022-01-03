@@ -35,7 +35,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: #777;
+    color: #e5e5e5;
     font-weight: 400;
     position: relative;
     overflow-x: hidden;
@@ -44,7 +44,7 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair Display', sans-serif;
     -webkit-font-smoothing:antialiased;
-    color: #424242;
+    color: #e5e5e5;
 }
 h1{
     font-size: 40px;
@@ -54,7 +54,7 @@ h1{
 }
 h2{
     font-size: 24px;
-    color: #333;
+    color: #e5e5e5;
     margin: 0 0 8px;
     font-weight: 700;
     line-height: 35px;
@@ -121,6 +121,10 @@ textarea:-ms-input-placeholder{
 button{
     border: none;
     background: none;
+}
+.center
+{
+  text-align: center;
 }
 /* Helper Class */
 .padding{
@@ -199,7 +203,7 @@ button{
     z-index: -1;
 }
 .bg-grey{
-    background-color: #f2f2f2;
+    background-color: #121212;
 }
 .bd-bottom{
     border-bottom: 1px solid #eaeaea;
@@ -573,6 +577,9 @@ a.top-left-text:active
 .work-box:hover .work-content h3{
     transform: rotate(1080deg);
     transition: all 0.3s ease-in-out;
+}
+.work-content p{
+  color: #605c5c;
 }
 .work-details h3 a{
     font-weight: 700;
@@ -1207,6 +1214,9 @@ span.date{
 .footer-content h2{
     color: #777777;
 }
+.footer-content p{
+  color: #777777;
+}
 .social-icon li a{
     color: #ddd;
     margin: 0 20px 0 0;
@@ -1232,7 +1242,7 @@ span.date{
    12.0 Scroll To Top
    ========================================================================== */
 #scroll-to-top{
-    background-color: #0c0c0c;
+    background-color: #dfd7d7;
     display: none;
     width: 45px;
     height: 45px;
