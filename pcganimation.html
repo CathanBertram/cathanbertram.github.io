@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
 
-        <title>Cathan Bertram - Unity FPS</title>
+        <title>Cathan Bertram - PCG Animation</title> <!-- CHANGE -->
 
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 
@@ -72,8 +72,8 @@
         <section class="page-header bd-bottom padding">
             <div class="container">
                 <div class="page-content text-center">
-                    <h1>Unity FPS</h1>
-                    <span>Unity, C#</span>
+                    <h1>PCG Animation</h1> <!-- CHANGE -->
+                    <span>Unity C#</span> <!-- CHANGE -->
                 </div>
             </div>
         </section><!-- /page-header -->
@@ -83,23 +83,18 @@
                 <div class="row">
                     <div class="col-lg-10 offset-sm-1 sm-padding">
                         <div class="single-post">
-                            <img src="img/unityfps/title.jpg" alt="blog post">
-                            <p>This FPS game was made for my universities “Game Engine Programming” module. This module involved using two different
-                                game engines, Unity and UE4, to create games and introduce you to the game engines. I decided to create an FPS game
-                                with some advanced movement mechanics as well as procedurally animated enemies.</p>
-                            <p>The movement was also physics based as I wanted the movement to feel more fluid. As well as this, it made it easy to
-                                add other movement systems. The more advanced parts of the movement system were wall running and grappling. The
-                                process for wall running was fairly simple, I did a raycast to each side of the player to see if there was a wall in
-                                range, if there was a small force would be applied in the direction of the wall and gravity would be reduced.
-                                Grappling was also very simple, I just used a spring joint component to link both objects, this made sure that one
-                                object couldn’t move to far from the other, it also gave the connection spring like properties which made it feel
-                                like the player was bouncing if they were too far away. Finally, I used a line renderer to draw a line from the
-                                player to the grapple point.</p>
-                            <p>To procedurally animate the enemies I created legs that used inverse kinematics. The leg would stay attached to the
-                                enemy on one side and the floor on the other. This was a very simple implementation so the overall look of the
-                                movement was very good however it worked well for this project. I also checked the height of the main body of the
-                                enemy and if it was too low I added a small force to move it up, this made it look as if the enemy was bouncing.</p>
-                            <p>Overall, this project was a reasonable success and helped me learn a lot about making games in unity.</p>
+                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/du84w1yHy88?si=Y5btqrUxZiymSmwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <p>My entire masters degree was focused on procedural content generation, specifically procedurally generated
+                                ecosystems, and the first project involved in this was procedural animation. For this project I researched methods
+                                of procedurally generating animations to develop my own systems that allow for the procedural generation of
+                                creatures.
+                            </p>
+                            <p>This was accomplished by making use of inverse kinematics. This is a technique often used in robotics to move the end
+                                point of an arm to a specific point by rotating each of the joints. I made use of this technique by applying inverse
+                                kinematics to each limb on the body to ensure that the end point of the leg would constantly be grounded. Each legs
+                                target would then be moved periodically to simulate a step. Combining this with a body and AI allowed me to create
+                                simple creatures that employed spider-like movement.
+                            </p> <!-- CHANGE -->
                         </div>
                     </div><!-- Blog Posts -->
                 </div>
@@ -109,34 +104,39 @@
         <section class="single-carousel bg-grey padding">
             <div class="container">
                 <div id="single-carousel" class="single-carousel owl-carousel">
-                    <div class="single-item">
-                          <img src="img/unityfps/mainmenu.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/1.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/optionsmenu.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/2.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/levelselect.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/3.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/startlevel.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/4.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/combat.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/5.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/death.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/6.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/basicenemy.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/7.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/doublebarrelenemy.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/8.png" alt="img">
                     </div>
-                    <div class="single-item">
-                          <img src="img/unityfps/gatlingenemy.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/pcganimation/9.png" alt="img">
                     </div>
-                </div>
+                    <div class="single-item">             
+                        <img src="img/pcganimation/10.png" alt="img">
+                    </div>
+                    <div class="single-item">             
+                        <img src="img/pcganimation/11.png" alt="img">
+                    </div>
             </div>
         </section><!-- /single-carousel -->
 
@@ -157,7 +157,6 @@
                 </div>
             </div>
         </section><!-- /Widget-section -->
-
 
 		<a data-scroll href="#header" id="scroll-to-top"><i class="arrow_up"></i></a>
 

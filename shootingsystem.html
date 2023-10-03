@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
 
-        <title>Cathan Bertram - Shape Tower Defence</title>
+        <title>Cathan Bertram - Shooting System</title> <!-- CHANGE -->
 
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 
@@ -49,7 +49,7 @@
                     <div class="bottom-content-wrap row">
                         <div class="col-md-4">
                             <div class="site-branding">
-                                <a class="top-left-text" href="#"><!-- <img src="img/logo.png" alt="Brand"> --> Cathan Bertram</a>
+                                <a class="top-left-text" href="index.html"><!-- <img src="img/logo.png" alt="Brand"> --> Cathan Bertram</a>
                             </div>
                         </div>
                         <div class="col-md-8  text-right">
@@ -72,8 +72,8 @@
         <section class="page-header bd-bottom padding">
             <div class="container">
                 <div class="page-content text-center">
-                    <h1>Shape Tower Defence</h1>
-                    <span>University Project</span>
+                    <h1>Shooting System</h1> <!-- CHANGE -->
+                    <span>UE4, C++</span> <!-- CHANGE -->
                 </div>
             </div>
         </section><!-- /page-header -->
@@ -83,20 +83,40 @@
                 <div class="row">
                     <div class="col-lg-10 offset-sm-1 sm-padding">
                         <div class="single-post">
-                            <img src="img/shapetowerdefence/title.jpg" alt="blog post">
-                            <h2 class = "center">Shape Tower Defence</h2>
-                            <!--
-                            <div class="meta-info">
-                                <span>
-                                    <i class="ti-user"></i> Written By <a href="#">David Cameroon</a>
-                                </span>
-                                <span>
-                                    <i class="ti-bookmark"></i> Tagged As <a href="#">Wordpress Development</a>
-                                </span>
-                            </div> -->
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only centuries, but also the electronic more typesetting, remaining essentially unchanged.Nullam id dolor ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.This time is more Cras justo dapibus ac facilisis not only centuriemen, business type but also the in typesetting industry.</p>
-
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Nullam id dolor ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere ve
+                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/3_lFEvpWT-U?si=G8wBwWT-METO60xI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <p>This project was a part of my final year of my bachelors degree. It involved designing and producing a game mechanic
+                                in Unreal Engine that could be used in a finished a game. I chose to create a shooting system similar to those that
+                                can be found in games like counter-strike and valorant. This meant that I needed to have simple hitscan guns that
+                                can have repeatable recoil patterns.
+                            </p>
+                            <p>The guns are very simple. An abstract C++ class was created that held the basic functionality for the gun such as
+                                shooting, reloading and fire rate. Shooting was simply done by performing a linetrace and accessing an interface on
+                                the object that has been hit, this allowed functions to be performed on the hit object that can allow it to take
+                                damage, break or anything else that was required. Reloading was done by resetting the ammo count after finishing a
+                                timer, this could have been better by linking it to animations however my primary focus for the project was making
+                                recoil patterns easy so I didn’t get around to adding animations. Child classes were created for different types of
+                                guns, specifically fully automatic and semi-automatic, to control how they shoot. The base class contained an
+                                interface for input to tell the gun when the fire key is pressed and when it is released. For a semi-automatic gun,
+                                shooting is very simple as the gun needs to fire when the fire key is pressed provided the gun is not on cooldown.
+                                Fully automatic guns are slightly more complex, when the fire key is pressed a bool is toggled to tell the gun that
+                                it is currently firing, then in the update function the gun will check if it is currently firing and shoot if it is
+                                not on cooldown.
+                            </p>
+                            <p>Recoil patterns were much more complicated. The basic concept for the recoil pattern was to store a list of Vector3s
+                                that would rotate the camera each time the gun is shot. The list entry that was used would be the same as the number
+                                of bullets that have been fired before the recoil resets. Implementing this was very simple, the main difficulties
+                                come with creating an editor that makes creating recoil patterns much easier. A very simple editor for the recoil
+                                patterns was made by using editor modes. An editor mode was created that allowed me to click and add a new point to
+                                the recoil pattern. These points could then be edited by clicking and dragging them around. This worked for editing
+                                recoil patterns however, additional UI was needed to save and load recoil patterns to ensure that they could be
+                                edited after being initially created. This UI was created using Slate which was torture however, it allowed me to
+                                create simple UI that could execute functions on the editor to load data from previously made recoil patterns, save
+                                new recoil patterns and toggle point visibility in the editor.
+                            </p>
+                            <p>Overall, this project taught me a lot about using Unreal Engine and how useful custom editors can be. Furthermore it
+                                also showed me how useful proper commenting can be in unfamiliar code bases as a lot of documentation for Unreal
+                                Engine can be found in the comments of the source code.
+                            </p> <!-- CHANGE -->
                         </div>
                     </div><!-- Blog Posts -->
                 </div>
@@ -106,31 +126,25 @@
         <section class="single-carousel bg-grey padding">
             <div class="container">
                 <div id="single-carousel" class="single-carousel owl-carousel">
-                    <div class="single-item">
-
-                            <img src="img/shapetowerdefence/combat.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/shootingsystem/1.png" alt="img">
                     </div>
-                    <div class="single-item">
-
-                            <img src="img/shapetowerdefence/idle.jpg" alt="img">
-
+                    <div class="single-item">             
+                        <img src="img/shootingsystem/2.png" alt="img">
                     </div>
-                    <div class="single-item">
-
-                            <img src="img/shapetowerdefence/mainmenu.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/shootingsystem/3.png" alt="img">
                     </div>
-                    <div class="single-item">
-
-                            <img src="img/shapetowerdefence/options.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/shootingsystem/4.png" alt="img">
                     </div>
-                    <div class="single-item">
-
-                            <img src="img/shapetowerdefence/pause.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/shootingsystem/5.png" alt="img">
                     </div>
-                    <div class="single-item">
-
-                            <img src="img/shapetowerdefence/upgrades.jpg" alt="img">
+                    <div class="single-item">             
+                        <img src="img/shootingsystem/6.png" alt="img">
                     </div>
+
                 </div>
             </div>
         </section><!-- /single-carousel -->
